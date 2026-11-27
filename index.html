@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>OneKey Pro 2 · 3D Viewer</title>
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" href="data:," />
+  <link rel="preload" href="./assets/model/black.glb" as="fetch" crossorigin />
+  <link rel="preload" href="./assets/studio/studio.json" as="fetch" crossorigin />
+  <link rel="stylesheet" href="./src/style.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "./vendor/three/three.module.js",
+        "three/addons/": "./vendor/three/addons/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <main class="stage" id="stage" data-theme="light">
+    <div class="viewport" id="viewport" aria-label="3D 模型，拖拽旋转" role="img"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-name">OneKey Pro 2</span>
+        <span class="brand-tag">3D</span>
+      </div>
+      <div class="tools">
+        <button class="icon-btn" id="btn-theme" type="button" title="切换背景" aria-label="切换背景">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z"/></svg>
+        </button>
+        <button class="icon-btn" id="btn-shot" type="button" title="保存截图 (透明 PNG)" aria-label="保存截图">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8.5A2.5 2.5 0 0 1 6.5 6h1.6l1.2-1.8h5.4L15.9 6h1.6A2.5 2.5 0 0 1 20 8.5v8a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 16.5v-8Z"/><circle cx="12" cy="12.4" r="3.4"/></svg>
+        </button>
+        <button class="icon-btn" id="btn-full" type="button" title="全屏" aria-label="全屏">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <aside class="story" id="story">
+      <div class="story-intro">
+        <p class="eyebrow" id="copy-eyebrow"></p>
+        <h1 class="story-title" id="copy-title"></h1>
+        <p class="story-desc" id="copy-desc"></p>
+      </div>
+      <h2 class="closer" id="copy-closer"></h2>
+      <ul class="features" id="features"></ul>
+      <p class="feature-caption" id="feature-caption" aria-live="polite"></p>
+      <div class="sheet-swatches" id="sheet-swatches" role="radiogroup" aria-label="配色"></div>
+    </aside>
+
+    <p class="hint" id="hint">拖拽旋转 · 滚轮 / 双指缩放 · 双击复位</p>
+
+    <section class="dock" aria-label="视角">
+      <nav class="views" id="views" aria-label="视角"></nav>
+      <div class="toggles">
+        <label class="toggle"><input type="checkbox" id="opt-snap" checked /><span>视角吸附</span></label>
+        <label class="toggle"><input type="checkbox" id="opt-spin" /><span>自动旋转</span></label>
+      </div>
+    </section>
+
+    <div class="loader" id="loader" role="status" aria-live="polite">
+      <div class="loader-num"><span id="loader-pct">0</span><small>%</small></div>
+      <div class="loader-bar"><i id="loader-bar"></i></div>
+      <div class="loader-msg" id="loader-msg">准备中</div>
+    </div>
+  </main>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

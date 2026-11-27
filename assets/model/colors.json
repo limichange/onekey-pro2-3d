@@ -1,0 +1,85 @@
+{
+  "_readme": "OneKey Pro 2 配色规范。一个基准模型 + 本表按分组换色即可得到各配色版本,无需每个配色单独导出模型。适用于 three.js / 任意 PBR 渲染管线。",
+  "_howToApply": [
+    "1) 加载基准模型(黑色版 GLB)。",
+    "2) 选定一个配色后,对 groups 里每个分组、把该组所有材质的 Base Color 设成 colors[配色].groupColors[组名] 的 HEX。",
+    "3) HEX 是 sRGB 值,渲染器里请转成线性(three.js: material.color.set(hex) 会自动转)。",
+    "4) 只改 Base Color,不要动 metalness / roughness —— 镜面中框是纯金属,它的 Base Color 染的是“反射的颜色”,改 roughness 会破坏镜面质感。",
+    "5) 未列入任何分组的材质(屏幕/摄像头/USB-C 等)所有配色保持不变。",
+    "6) roleColors 是产品级光学修正,会在 groupColors 之后按 viewer role 覆盖 Base Color; 用于处理 GLB 中不在颜色分组里的辅助反射壳,以及黑色背盖在 Apple 灯箱下过亮的问题。",
+    "7) studioIntensity 是该配色下所有灯箱反射强度的统一倍率(1 = Apple 原始亮度,省略即 1);深色机身吸光少、反射显得刺眼,所以黑色用得更低。",
+    "8) studioBackground 是烘焙灯箱时灯箱之间的底色(省略即纯黑)。镜面金属只反射环境,底色给每个方向补一点暗光,中框没照到灯箱的区域就不再是死黑;按配色用同色系暗色,黑色版保持纯黑。",
+    "9) roleIntensity 按 viewer role 覆盖该配色下的反射强度(替换产品预设值,不是倍率);未列出的角色沿用预设。目前只有黑色版把镜片(lens)压到 0.4。",
+    "10) roleMaterial 按 viewer role 覆盖该配色下的材质参数(metalness / roughness 等),切到别的配色即恢复产品值。目前橙色把背盖(body)的 metalness 设为 0.3。"
+  ],
+  "_materialNamingWarning": "下面 materials 列出的是当前基准 GLB(黑色版)里的材质名。务必让所有配色版本、以及后续导出都用同一套材质名,且按“部件”命名(不要把颜色写进材质名、不要出现 .001/.002 后缀),否则按名字对齐会失效。",
+  "baseModel": "/models/onekey-pro-2/black.glb",
+  "groups": {
+    "背盖": [
+      "Pro2-背盖-黑色",
+      "logo2黑"
+    ],
+    "中框": [
+      "Pro2-中框-黑",
+      "Pro2-中框装饰-黑.001"
+    ],
+    "电源键": [
+      "Pro2-电源键-黑"
+    ]
+  },
+  "colors": {
+    "Black": {
+      "swatch": "#3E3E44",
+      "studioVariant": "glossy-dark",
+      "studioIntensity": 0.45,
+      "groupColors": {
+        "背盖": "#45454c",
+        "中框": "#47474f",
+        "电源键": "#45454c"
+      },
+      "roleIntensity": {
+        "lens": 0.4
+      },
+      "roleColors": {
+        "body": "#38393f",
+        "back-overlay": "#3b3d4b",
+        "logo": "#2d2e34"
+      },
+      "studioBackground": "#393939",
+      "roleMaterial": {
+        "body": {
+          "metalness": 0.1
+        }
+      }
+    },
+    "Orange": {
+      "swatch": "#FF7500",
+      "studioVariant": "glossy",
+      "studioIntensity": 1,
+      "studioBackground": "#331704",
+      "groupColors": {
+        "背盖": "#ff421f",
+        "中框": "#ff4d14",
+        "电源键": "#ff681f"
+      },
+      "roleMaterial": {
+        "body": {
+          "metalness": 0.3
+        }
+      }
+    },
+    "Silver": {
+      "swatch": "#7F7F7F",
+      "studioVariant": "glossy",
+      "studioIntensity": 1,
+      "studioBackground": "#333333",
+      "groupColors": {
+        "背盖": "#a5a5a5",
+        "中框": "#f2f2f2",
+        "电源键": "#ffffff"
+      },
+      "roleMaterial": {}
+    }
+  },
+  "default": "Black"
+}
