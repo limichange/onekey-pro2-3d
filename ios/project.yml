@@ -1,0 +1,54 @@
+name: OneKeyPro2
+options:
+  bundleIdPrefix: dev.limichange
+  deploymentTarget:
+    iOS: "18.0" # per-entity image-based lighting needs iOS 18
+  createIntermediateGroups: true
+packages:
+  GLTFKit2:
+    url: https://github.com/warrenm/GLTFKit2
+    exactVersion: 0.5.15
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+targets:
+  OneKeyPro2:
+    type: application
+    platform: iOS
+    sources:
+      - path: OneKeyPro2
+        excludes:
+          - "ProductAssets/**"
+      - path: OneKeyPro2/ProductAssets
+        type: folder
+    dependencies:
+      - package: GLTFKit2
+    info:
+      path: OneKeyPro2/Info.plist
+      properties:
+        CFBundleDisplayName: Pro 2 3D
+        LSRequiresIPhoneOS: true
+        ITSAppUsesNonExemptEncryption: false
+        NSPhotoLibraryAddUsageDescription: 将 3D 截图保存到相册
+        UILaunchScreen:
+          UIColorName: StageBackground
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.limichange.OneKeyPro2
+        TARGETED_DEVICE_FAMILY: "1,2"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        # Studio environment maps are rasterised on the CPU at launch; keep that fast in Debug too.
+        SWIFT_OPTIMIZATION_LEVEL: "-O"
+        CODE_SIGN_STYLE: Automatic

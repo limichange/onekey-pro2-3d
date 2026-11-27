@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F0889F324FB7F30DA9CC24C /* ProductAssets in Resources */ = {isa = PBXBuildFile; fileRef = 19F1248775C7D266BEF492DB /* ProductAssets */; };
+		1166DC37BE6BFCE15A92C4C0 /* ViewerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE110C00497AE016ECE1D0D /* ViewerModel.swift */; };
+		16B7162508394BBD8FC832B4 /* GLTFKit2 in Frameworks */ = {isa = PBXBuildFile; productRef = E9A6E035FA2EEE5A52681E09 /* GLTFKit2 */; };
+		173749A9230B21013369758F /* Springs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAF1C2A33E95237B40BED28 /* Springs.swift */; };
+		1EFF960B10181ED80926C959 /* StudioLighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C50891A77B570E14391FD2 /* StudioLighting.swift */; };
+		2BAE1D9CC74880D120532BC7 /* OrbitCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B05A844680CE90CFE25A9D /* OrbitCamera.swift */; };
+		31947F4C4FC3ABBE476966C7 /* StageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998D72883A9E465DF4218E28 /* StageView.swift */; };
+		3D8EA0212A95328BC25C49BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACAA31E0C7BFEB82AA5786C6 /* Assets.xcassets */; };
+		401861F7250C6E0FB73278EE /* Rig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B23E508ACE904BCF52F0A14 /* Rig.swift */; };
+		517EC4AC15D4593670AAF3E6 /* StudioDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB356BC1FC2665C0B3226217 /* StudioDefinition.swift */; };
+		5F7BE50628FE3DE8C19A207E /* ProductStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A28B192FF6AFF37FA31EA7 /* ProductStage.swift */; };
+		8B5C208F609D055BEF58322F /* StudioBaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EB24CAE869D52E7AA3C140 /* StudioBaker.swift */; };
+		9F52CD2EEB4A98834697AD29 /* GLTFEntityBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15739477A83C8B7F44D69F0A /* GLTFEntityBuilder.swift */; };
+		CB2B264D511262E95CD5374B /* ColorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0E6E8AE00AFD2BE74B743E /* ColorSpec.swift */; };
+		DCC93A7AE4353F4CCDF2E6A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1147E04F34DE64CCBADF4427 /* ContentView.swift */; };
+		E7C320F29E587395A14A8636 /* ProductConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DB2D6AF5A4D2CFE16C64D4 /* ProductConfig.swift */; };
+		FEE6F18A3A864B8A7D6F0D98 /* OneKeyPro2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D79D8BDBC207A7BA457B4E /* OneKeyPro2App.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1147E04F34DE64CCBADF4427 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		15739477A83C8B7F44D69F0A /* GLTFEntityBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLTFEntityBuilder.swift; sourceTree = "<group>"; };
+		19F1248775C7D266BEF492DB /* ProductAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ProductAssets; path = OneKeyPro2/ProductAssets; sourceTree = SOURCE_ROOT; };
+		24EB24CAE869D52E7AA3C140 /* StudioBaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioBaker.swift; sourceTree = "<group>"; };
+		54A28B192FF6AFF37FA31EA7 /* ProductStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductStage.swift; sourceTree = "<group>"; };
+		5B23E508ACE904BCF52F0A14 /* Rig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rig.swift; sourceTree = "<group>"; };
+		75B05A844680CE90CFE25A9D /* OrbitCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitCamera.swift; sourceTree = "<group>"; };
+		998D72883A9E465DF4218E28 /* StageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageView.swift; sourceTree = "<group>"; };
+		AAAF1C2A33E95237B40BED28 /* Springs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Springs.swift; sourceTree = "<group>"; };
+		ABE110C00497AE016ECE1D0D /* ViewerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerModel.swift; sourceTree = "<group>"; };
+		AC0E6E8AE00AFD2BE74B743E /* ColorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSpec.swift; sourceTree = "<group>"; };
+		ACAA31E0C7BFEB82AA5786C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5DB2D6AF5A4D2CFE16C64D4 /* ProductConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductConfig.swift; sourceTree = "<group>"; };
+		B6D79D8BDBC207A7BA457B4E /* OneKeyPro2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneKeyPro2App.swift; sourceTree = "<group>"; };
+		C09DECF294F5B4FF2E5F3765 /* OneKeyPro2.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = OneKeyPro2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C98800FB4CF345A84FD24344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CB356BC1FC2665C0B3226217 /* StudioDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioDefinition.swift; sourceTree = "<group>"; };
+		E8C50891A77B570E14391FD2 /* StudioLighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioLighting.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D5737C5965CBAC8E4230153 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16B7162508394BBD8FC832B4 /* GLTFKit2 in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8032B012C71A3CC57C292398 /* Stage */ = {
+			isa = PBXGroup;
+			children = (
+				75B05A844680CE90CFE25A9D /* OrbitCamera.swift */,
+				54A28B192FF6AFF37FA31EA7 /* ProductStage.swift */,
+				AAAF1C2A33E95237B40BED28 /* Springs.swift */,
+				998D72883A9E465DF4218E28 /* StageView.swift */,
+			);
+			path = Stage;
+			sourceTree = "<group>";
+		};
+		863D80E960BBB76D9CB04E1A /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				AC0E6E8AE00AFD2BE74B743E /* ColorSpec.swift */,
+				15739477A83C8B7F44D69F0A /* GLTFEntityBuilder.swift */,
+				B5DB2D6AF5A4D2CFE16C64D4 /* ProductConfig.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		A2699072FFF5434F721B08F4 = {
+			isa = PBXGroup;
+			children = (
+				F640E6F8ABF5BB8E6811CD18 /* OneKeyPro2 */,
+				EC728B24C50EE39155A25246 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E21F8AF0333F03252FF109D0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1147E04F34DE64CCBADF4427 /* ContentView.swift */,
+				B6D79D8BDBC207A7BA457B4E /* OneKeyPro2App.swift */,
+				ABE110C00497AE016ECE1D0D /* ViewerModel.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EC728B24C50EE39155A25246 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C09DECF294F5B4FF2E5F3765 /* OneKeyPro2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECAE5C3EA2292E8649A75ADF /* Studio */ = {
+			isa = PBXGroup;
+			children = (
+				5B23E508ACE904BCF52F0A14 /* Rig.swift */,
+				24EB24CAE869D52E7AA3C140 /* StudioBaker.swift */,
+				CB356BC1FC2665C0B3226217 /* StudioDefinition.swift */,
+				E8C50891A77B570E14391FD2 /* StudioLighting.swift */,
+			);
+			path = Studio;
+			sourceTree = "<group>";
+		};
+		F640E6F8ABF5BB8E6811CD18 /* OneKeyPro2 */ = {
+			isa = PBXGroup;
+			children = (
+				ACAA31E0C7BFEB82AA5786C6 /* Assets.xcassets */,
+				C98800FB4CF345A84FD24344 /* Info.plist */,
+				19F1248775C7D266BEF492DB /* ProductAssets */,
+				E21F8AF0333F03252FF109D0 /* App */,
+				863D80E960BBB76D9CB04E1A /* Product */,
+				8032B012C71A3CC57C292398 /* Stage */,
+				ECAE5C3EA2292E8649A75ADF /* Studio */,
+			);
+			path = OneKeyPro2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FF6EC9DC955CFFF207BB88A /* OneKeyPro2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09F2D09905502BFD0C484506 /* Build configuration list for PBXNativeTarget "OneKeyPro2" */;
+			buildPhases = (
+				F651EE7C72EA3FE62FFBCF59 /* Sources */,
+				ABD79DE742EE0685872FD0DA /* Resources */,
+				4D5737C5965CBAC8E4230153 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneKeyPro2;
+			packageProductDependencies = (
+				E9A6E035FA2EEE5A52681E09 /* GLTFKit2 */,
+			);
+			productName = OneKeyPro2;
+			productReference = C09DECF294F5B4FF2E5F3765 /* OneKeyPro2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2461AF1270E9F17D1E0D1B42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4FF6EC9DC955CFFF207BB88A = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 65977DD65F1ECDD104AB7E7A /* Build configuration list for PBXProject "OneKeyPro2" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = A2699072FFF5434F721B08F4;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				105A1E09BDE6FAD6BB09D921 /* XCRemoteSwiftPackageReference "GLTFKit2" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EC728B24C50EE39155A25246 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FF6EC9DC955CFFF207BB88A /* OneKeyPro2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABD79DE742EE0685872FD0DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D8EA0212A95328BC25C49BB /* Assets.xcassets in Resources */,
+				0F0889F324FB7F30DA9CC24C /* ProductAssets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F651EE7C72EA3FE62FFBCF59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB2B264D511262E95CD5374B /* ColorSpec.swift in Sources */,
+				DCC93A7AE4353F4CCDF2E6A6 /* ContentView.swift in Sources */,
+				9F52CD2EEB4A98834697AD29 /* GLTFEntityBuilder.swift in Sources */,
+				FEE6F18A3A864B8A7D6F0D98 /* OneKeyPro2App.swift in Sources */,
+				2BAE1D9CC74880D120532BC7 /* OrbitCamera.swift in Sources */,
+				E7C320F29E587395A14A8636 /* ProductConfig.swift in Sources */,
+				5F7BE50628FE3DE8C19A207E /* ProductStage.swift in Sources */,
+				401861F7250C6E0FB73278EE /* Rig.swift in Sources */,
+				173749A9230B21013369758F /* Springs.swift in Sources */,
+				31947F4C4FC3ABBE476966C7 /* StageView.swift in Sources */,
+				8B5C208F609D055BEF58322F /* StudioBaker.swift in Sources */,
+				517EC4AC15D4593670AAF3E6 /* StudioDefinition.swift in Sources */,
+				1EFF960B10181ED80926C959 /* StudioLighting.swift in Sources */,
+				1166DC37BE6BFCE15A92C4C0 /* ViewerModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0B3974CB535B86D0C94BF3C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3680CE223C6D38A1C42DCAA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B4D9892CF5A5DD3CC8A02694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OneKeyPro2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.limichange.OneKeyPro2;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C44D90DAF9014723972402E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OneKeyPro2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.limichange.OneKeyPro2;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09F2D09905502BFD0C484506 /* Build configuration list for PBXNativeTarget "OneKeyPro2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C44D90DAF9014723972402E0 /* Debug */,
+				B4D9892CF5A5DD3CC8A02694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		65977DD65F1ECDD104AB7E7A /* Build configuration list for PBXProject "OneKeyPro2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B3974CB535B86D0C94BF3C3 /* Debug */,
+				3680CE223C6D38A1C42DCAA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		105A1E09BDE6FAD6BB09D921 /* XCRemoteSwiftPackageReference "GLTFKit2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/warrenm/GLTFKit2";
+			requirement = {
+				kind = exactVersion;
+				version = 0.5.15;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E9A6E035FA2EEE5A52681E09 /* GLTFKit2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 105A1E09BDE6FAD6BB09D921 /* XCRemoteSwiftPackageReference "GLTFKit2" */;
+			productName = GLTFKit2;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2461AF1270E9F17D1E0D1B42 /* Project object */;
+}

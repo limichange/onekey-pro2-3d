@@ -19,6 +19,12 @@ URL params: `?color=Orange|Silver|Black`, `&feature=color|frame|back-cover|goril
 Controls: drag to orbit, wheel/pinch to zoom, double-click to reset zoom, ←/→ to step around,
 ↑/↓ for top/bottom, 1–3 to switch colours, F / Shift+F to step through features, Esc for the overview.
 
+## Native iOS app
+
+`ios/` contains a native SwiftUI + RealityKit app with no web view. It reads the same model,
+colour and studio data directly and bakes the softbox environments on device. See
+[ios/README.md](ios/README.md).
+
 ## Design copy + feature close-ups
 
 The left column (a bottom sheet on mobile) carries the zh_CN copy from the page's design section
