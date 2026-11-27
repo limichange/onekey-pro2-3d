@@ -145,6 +145,7 @@ function syncUrl() {
 // ---------- actions ----------
 
 const viewer = new ProductViewer(viewport, {
+  cubeSize: MOBILE_QUERY.matches ? 128 : 256,
   onAngleChange: renderAngle,
   // Grabbing the model leaves the close-up and returns to the overview pose (as on the site).
   onGrab: () => {
@@ -195,9 +196,11 @@ $('btn-theme').addEventListener('click', () => {
 });
 
 $('btn-shot').addEventListener('click', () => {
+  const image = viewer.screenshot();
+  const filename = `onekey-pro-2-${activeColor.toLowerCase()}${activeFeature ? `-${activeFeature}` : ''}.png`;
   const a = document.createElement('a');
-  a.href = viewer.screenshot();
-  a.download = `onekey-pro-2-${activeColor.toLowerCase()}${activeFeature ? `-${activeFeature}` : ''}.png`;
+  a.href = image;
+  a.download = filename;
   a.click();
 });
 

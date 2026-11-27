@@ -94,8 +94,9 @@ class Springs {
 }
 
 export class ProductViewer {
-  constructor(container, { onAngleChange, onGrab } = {}) {
+  constructor(container, { onAngleChange, onGrab, cubeSize = 256 } = {}) {
     this.container = container;
+    this.cubeSize = cubeSize;
     this.onAngleChange = onAngleChange ?? (() => {});
     this.onGrab = onGrab ?? (() => {});
     this.materials = [];
@@ -178,7 +179,7 @@ export class ProductViewer {
     this.root.add(model);
     this.scene.add(this.root);
 
-    this.rigs = studio.layers.map((def, i) => new StudioRig(renderer, this.pmrem, def, rigGltfs[i].scene));
+    this.rigs = studio.layers.map((def, i) => new StudioRig(renderer, this.pmrem, def, rigGltfs[i].scene, { cubeSize: this.cubeSize }));
     this.rigByLayer = new Map(this.rigs.map((rig) => [rig.layer, rig]));
 
     this.classifyMaterials();
